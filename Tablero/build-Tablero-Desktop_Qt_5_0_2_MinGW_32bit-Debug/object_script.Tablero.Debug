@@ -1,0 +1,12 @@
+INPUT(
+./debug\main.o
+./debug\nivel.o
+./debug\qtablero.o
+./debug\principal.o
+./debug\hilo1.o
+./debug\qrc_images.o
+./debug\moc_nivel.o
+./debug\moc_qtablero.o
+./debug\moc_principal.o
+./debug\moc_hilo1.o
+);
