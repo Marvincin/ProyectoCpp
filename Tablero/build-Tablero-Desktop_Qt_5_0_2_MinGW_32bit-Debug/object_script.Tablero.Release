@@ -4,9 +4,11 @@ INPUT(
 ./release\qtablero.o
 ./release\principal.o
 ./release\hilo1.o
+./release\numeros.o
 ./release\qrc_images.o
 ./release\moc_nivel.o
 ./release\moc_qtablero.o
 ./release\moc_principal.o
 ./release\moc_hilo1.o
+./release\moc_numeros.o
 );

@@ -4,9 +4,11 @@ INPUT(
 ./debug\qtablero.o
 ./debug\principal.o
 ./debug\hilo1.o
+./debug\numeros.o
 ./debug\qrc_images.o
 ./debug\moc_nivel.o
 ./debug\moc_qtablero.o
 ./debug\moc_principal.o
 ./debug\moc_hilo1.o
+./debug\moc_numeros.o
 );

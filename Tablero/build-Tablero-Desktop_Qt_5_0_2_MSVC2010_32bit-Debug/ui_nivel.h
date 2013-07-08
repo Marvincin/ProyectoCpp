@@ -56,6 +56,7 @@ public:
         facil = new QRadioButton(nivel);
         facil->setObjectName(QStringLiteral("facil"));
         facil->setGeometry(QRect(200, 120, 82, 17));
+        facil->setChecked(true);
         medio = new QRadioButton(nivel);
         medio->setObjectName(QStringLiteral("medio"));
         medio->setGeometry(QRect(200, 150, 82, 17));

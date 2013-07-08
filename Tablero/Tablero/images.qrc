@@ -1,0 +1,26 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/0.png</file>
+        <file>Sudoku1.txt</file>
+        <file>images/pista1.png</file>
+        <file>images/pista2.png</file>
+        <file>images/pista3.png</file>
+        <file>images/pista4.png</file>
+        <file>images/pista5.png</file>
+        <file>images/pista6.png</file>
+        <file>images/pista7.png</file>
+        <file>images/pista8.png</file>
+        <file>images/pista9.png</file>
+        <file>images/1.png</file>
+        <file>images/2.png</file>
+        <file>images/3.png</file>
+        <file>images/4.png</file>
+        <file>images/5.png</file>
+        <file>images/6.png</file>
+        <file>images/7.png</file>
+        <file>images/8.png</file>
+        <file>images/9.png</file>
+        <file>images/visto.png</file>
+        <file>images/x.png</file>
+    </qresource>
+</RCC>

@@ -37,7 +37,6 @@ public:
     QVBoxLayout *verticalLayout;
     QPushButton *pushButton_2;
     QPushButton *pushButton;
-    QPushButton *pushButton_3;
     QPushButton *pushButton_4;
     QPushButton *pushButton_6;
     QWidget *gridLayoutWidget;
@@ -56,6 +55,7 @@ public:
         if (QTablero->objectName().isEmpty())
             QTablero->setObjectName(QStringLiteral("QTablero"));
         QTablero->resize(750, 522);
+        QTablero->setAcceptDrops(true);
         actionQuit_2 = new QAction(QTablero);
         actionQuit_2->setObjectName(QStringLiteral("actionQuit_2"));
         actionExit = new QAction(QTablero);
@@ -83,11 +83,6 @@ public:
         pushButton->setIconSize(QSize(50, 50));
 
         verticalLayout->addWidget(pushButton);
-
-        pushButton_3 = new QPushButton(verticalLayoutWidget);
-        pushButton_3->setObjectName(QStringLiteral("pushButton_3"));
-
-        verticalLayout->addWidget(pushButton_3);
 
         pushButton_4 = new QPushButton(verticalLayoutWidget);
         pushButton_4->setObjectName(QStringLiteral("pushButton_4"));
@@ -153,7 +148,6 @@ public:
         actionExit->setText(QApplication::translate("QTablero", "Exit", 0));
         pushButton_2->setText(QApplication::translate("QTablero", "Juego Nuevo", 0));
         pushButton->setText(QApplication::translate("QTablero", "Verificar", 0));
-        pushButton_3->setText(QApplication::translate("QTablero", "Cargar  partida", 0));
         pushButton_4->setText(QApplication::translate("QTablero", "Guardar partida", 0));
         pushButton_6->setText(QApplication::translate("QTablero", "Salir", 0));
         menuFile->setTitle(QApplication::translate("QTablero", "File", 0));
