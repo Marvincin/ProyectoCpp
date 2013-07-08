@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.4"/>
-<title>Sudoku: Lista de archivos</title>
+<title>Sudoku: Fichero Fuente numeros.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,7 +59,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li class="current"><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -79,24 +79,40 @@ var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Lista de archivos</div>  </div>
+<div class="title">numeros.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock">Lista de todos los archivos documentados y con descripciones breves:</div><div class="directory">
-<table class="directory">
-<tr id="row_0_" class="even"><td class="entry"><img src="ftv2node.png" alt="o" width="16" height="22" /><a href="hilo_8h_source.html"><img src="ftv2doc.png" alt="*" width="24" height="22" /></a><b>hilo.h</b></td><td class="desc"></td></tr>
-<tr id="row_1_"><td class="entry"><img src="ftv2node.png" alt="o" width="16" height="22" /><a href="hilo1_8h_source.html"><img src="ftv2doc.png" alt="*" width="24" height="22" /></a><b>hilo1.h</b></td><td class="desc"></td></tr>
-<tr id="row_2_" class="even"><td class="entry"><img src="ftv2node.png" alt="o" width="16" height="22" /><a href="nivel_8h_source.html"><img src="ftv2doc.png" alt="*" width="24" height="22" /></a><b>nivel.h</b></td><td class="desc"></td></tr>
-<tr id="row_3_"><td class="entry"><img src="ftv2node.png" alt="o" width="16" height="22" /><a href="numeros_8h_source.html"><img src="ftv2doc.png" alt="*" width="24" height="22" /></a><b>numeros.h</b></td><td class="desc"></td></tr>
-<tr id="row_4_" class="even"><td class="entry"><img src="ftv2node.png" alt="o" width="16" height="22" /><a href="principal_8h_source.html"><img src="ftv2doc.png" alt="*" width="24" height="22" /></a><b>principal.h</b></td><td class="desc"></td></tr>
-<tr id="row_5_"><td class="entry"><img src="ftv2node.png" alt="o" width="16" height="22" /><a href="qtablero_01_07_copia_01en_01conflicto_01de_01_marlon_01_loayza_012013-07-07_08_8h_source.html"><img src="ftv2doc.png" alt="*" width="24" height="22" /></a><b>qtablero (Copia en conflicto de Marlon Loayza 2013-07-07).h</b></td><td class="desc"></td></tr>
-<tr id="row_6_" class="even"><td class="entry"><img src="ftv2lastnode.png" alt="\" width="16" height="22" /><a href="qtablero_8h_source.html"><img src="ftv2doc.png" alt="*" width="24" height="22" /></a><a class="el" href="qtablero_8h.html" target="_self">qtablero.h</a></td><td class="desc">Este archivo contiene la definicion de la clase Qtablero que nos servira para poder crear el juego Sudoku version 2.0 </td></tr>
-</table>
-</div><!-- directory -->
-</div><!-- contents -->
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef NUMEROS_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define NUMEROS_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QDialog&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span>Ui {</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">class </span><a class="code" href="class_numeros.html">Numeros</a>;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;}</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="code" href="class_numeros.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_numeros.html">Numeros</a> : <span class="keyword">public</span> QDialog</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_numeros.html">Numeros</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    QString numero1;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    ~<a class="code" href="class_numeros.html">Numeros</a>();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> on_buttonBox_accepted();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span> extraer_texto(QString valor);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    Ui::Numeros *ui;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;};</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#endif // NUMEROS_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generado el Lunes, 8 de Julio de 2013 00:36:53 para Sudoku por &#160;<a href="http://www.doxygen.org/index.html">
+Generado el Lunes, 8 de Julio de 2013 00:36:49 para Sudoku por &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>
