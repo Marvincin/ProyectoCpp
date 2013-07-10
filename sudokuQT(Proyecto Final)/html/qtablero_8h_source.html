@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>Sudoku: Fichero Fuente qtablero.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="sudoku4kix_logo_460x124.gif"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Sudoku
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="annotated.html"><span>Estructuras&#160;de&#160;Datos</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Globales</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Estructuras de Datos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">qtablero.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="qtablero_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef QTABLERO_H</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define QTABLERO_H</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;QMainWindow&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;QApplication&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;QFile&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;QTime&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;QDebug&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;QTextStream&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;QString&gt;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;QPushButton&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;QGridLayout&gt;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;QTextLine&gt;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;QLabel&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;QErrorMessage&gt;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;QLineEdit&gt;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include&lt;QTextLine&gt;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;numeros.h&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">namespace </span>Ui {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">class </span><a class="code" href="class_q_tablero.html" title="Clase que se encarga de generar y manejar eventos para el sudoku. ">QTablero</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="code" href="class_q_tablero.html">   55</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_q_tablero.html" title="Clase que se encarga de generar y manejar eventos para el sudoku. ">QTablero</a> : <span class="keyword">public</span> QMainWindow</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_q_tablero.html#ad874f712d2619e753ec1d2e454545d6b" title="QTablero Constructor para el nuevo tablero. ">QTablero</a>(QString nombre,QWidget *parent , <span class="keywordtype">int</span> d);</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="code" href="class_q_tablero.html#ab6988e6aa07336dc639688ef420f0b10">   70</a></span>&#160;    QString <a class="code" href="class_q_tablero.html#ab6988e6aa07336dc639688ef420f0b10" title="nombrejugador Variable donde se guarda el nombre del jugador ">nombrejugador</a>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="code" href="class_q_tablero.html#a0bd584d1e208a5212d402b30740d4cea">   75</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_q_tablero.html#a0bd584d1e208a5212d402b30740d4cea" title="dificultad Variable la cual nos indica la dificultad del juego ">dificultad</a>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="code" href="class_q_tablero.html#a7f0335cb524444bd5806cd8336174f32">   76</a></span>&#160;    QString <a class="code" href="class_q_tablero.html#a7f0335cb524444bd5806cd8336174f32">Aux</a>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="code" href="class_q_tablero.html#aa2b427975a16d773ac3624c3f09f1dbb">   77</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_q_tablero.html#aa2b427975a16d773ac3624c3f09f1dbb">habilitados</a>[9][9];</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="code" href="class_q_tablero.html#ae2bf33108036c5f76f04480aabda39cb">   78</a></span>&#160;    QStringList <a class="code" href="class_q_tablero.html#ae2bf33108036c5f76f04480aabda39cb">nombresjugadores</a>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="class_q_tablero.html#aa989d612221c57f3608da05965557bde">~QTablero</a>();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_tablero.html#affe5425e0c485fcb06eb87bc7a668ea1" title="on_verificar_clicked Señal que actua cuando el boton Verificar es pulsado con el objetivo de verifica...">on_verificar_clicked</a>();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_tablero.html#af1ac2ed8ab65c030ab62094c6de502b2" title="control_ingreso_ficha Funcion que verifica si una ficha a sido colocada correctamente en el tablero...">control_ingreso_ficha</a>();</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_tablero.html#aa65d125749974078cd15d9230da6de67" title="on_actionExit_triggered Slot que actua cuando pulsan exit que nos permite cerrar la aplicacion ...">on_actionExit_triggered</a>();</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_tablero.html#ab33477f6bb356b0413f4b62b36afb4b9" title="partida_nueva Funcion que nos permite crear un nuevo tablero con la dificultad dada ...">partida_nueva</a>(<span class="keywordtype">int</span> d);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">void</span>  <a class="code" href="class_q_tablero.html#a70a9babfd41d7d45a2e774ff9decc786" title="verificarficha Funcion que nos permite verificar si un tablero esta correctamente lleno ...">verificarficha</a>();</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">int</span>  <a class="code" href="class_q_tablero.html#aee182443d767ad28bb8a42e21ca405f9" title="verificarcolumna Funcion que me permite saber si una ficha esta ubicada correctamente en la columna ...">verificarcolumna</a>(<span class="keywordtype">int</span> ficha,<span class="keywordtype">int</span> l, <span class="keywordtype">int</span> m);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_tablero.html#a50dafe8b469a6952a1c990ab6048922d" title="jugadores_archivo Funcion que me permite cargar el archivo de llos jugadores ">jugadores_archivo</a>();</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_tablero.html#a9891521d5dd42f5eae15097f1721ad9b" title="cargar_partidas Funcion que carga las partidas guardadas ">cargar_partidas</a>(QString nombre);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordtype">int</span>  <a class="code" href="class_q_tablero.html#ace2238d3b165668157640da3ecd2a4b7" title="verificarfila Funcion que me permite verificar si un valor esta correctamente ubicada en la fila ...">verificarfila</a>(<span class="keywordtype">int</span> ficha,<span class="keywordtype">int</span> l, <span class="keywordtype">int</span> m);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_q_tablero.html#a5a48d3437538521913d71994f01972e7" title="verificarsubcuadricula Dada el valor de una ficha verifica si esta correctamente ubicada en la subcua...">verificarsubcuadricula</a>(<span class="keywordtype">int</span> ficha,<span class="keywordtype">int</span> l, <span class="keywordtype">int</span> m);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    QString <a class="code" href="class_q_tablero.html#a4022f47a00ec1d559546502f1d94bdcd" title="inttoBinary Funcion que dado una valor decimal del 0 al 9 retorna su equivalencia en binario ...">inttoBinary</a>(<span class="keywordtype">int</span> i);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_q_tablero.html#aa6e7521b1e7509840fa98419773481fa" title="BinarytoInt Dada una cadena de caracteres de los numeros en binario del 0 al 9 retorna su equivalente...">BinarytoInt</a>(QString q);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_tablero.html#a09230d58bfba3328b56e0179620a9b60" title="on_pushButton_clicked Funcion que llama a la señal de verificar el tablero lleno ">on_pushButton_clicked</a>();</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_tablero.html#a8da62446f7cb74d02ed730a82748a0b5" title="on_pushButton_6_clicked Funcion que llama la ejecucion para cerrar la aplicacion ">on_pushButton_6_clicked</a>();</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_tablero.html#ad6ca26b9d399ee6a0673f0dc7adc4eeb" title="tiempo Funcion que crea nuevas variables para ejecutar el cronometro ">tiempo</a>();</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_tablero.html#a805f2e9983473e8268af4002a14058aa" title="tiempo1 funcion que va cambiando los segundos sucesivamente ">tiempo1</a>();</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_tablero.html#a5cbf48c62d4df491f709a8bb2c0a5666" title="on_pushButton_2_clicked Funcion que verifica si el numero ingresado esta correcto ...">on_pushButton_2_clicked</a>();</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_tablero.html#aef7c0e48ab66ebeb4480afdf7a827b96" title="on_pushButton_4_clicked Funcion que guarda el tablero en un tiempo determinado ">on_pushButton_4_clicked</a>();</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_tablero.html#a5ae27bad7cfa5dd3909eecba9a94a5d1" title="escribirTablero Funcion que carga una partida que haya sido guardada con anterioridad ...">escribirTablero</a>();</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_tablero.html#a86e46664e9ca736c4c42e43215f0286e" title="initTablero funcion que asigna un valor a un arreglo de 81 casillas ">initTablero</a>(QString nombre, <span class="keywordtype">int</span> d);</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_q_tablero.html#a0167695adc4107349fb18b83c3527bf1" title="cargarTableroLleno funcion que crea un arreglo de 81 casillas de tipo QLineEdit ">cargarTableroLleno</a>(<span class="keyword">const</span> QString &amp;nombre_archivo, QString nombre,<span class="keywordtype">int</span> d);</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00204"></a><span class="lineno"><a class="code" href="class_q_tablero.html#ab35059622369531cd12113ed81d56296">  204</a></span>&#160;    QErrorMessage <a class="code" href="class_q_tablero.html#ab35059622369531cd12113ed81d56296">error</a>;</div>
+<div class="line"><a name="l00205"></a><span class="lineno"><a class="code" href="class_q_tablero.html#a1cb60f657c8150765ba905e3200a7f81">  205</a></span>&#160;    QStringList <a class="code" href="class_q_tablero.html#a9d54891391a61aec77953166fb87f733">numeros</a>,<a class="code" href="class_q_tablero.html#a1cb60f657c8150765ba905e3200a7f81">temporal</a>;</div>
+<div class="line"><a name="l00206"></a><span class="lineno"><a class="code" href="class_q_tablero.html#ad0a9c1c4982e0cb5e07a07f3d6209097">  206</a></span>&#160;    QStringList <a class="code" href="class_q_tablero.html#ad0a9c1c4982e0cb5e07a07f3d6209097">lineaCompleta</a>;</div>
+<div class="line"><a name="l00207"></a><span class="lineno"><a class="code" href="class_q_tablero.html#ac54bc08cd92801f8644591b6390e8498">  207</a></span>&#160;    QString <a class="code" href="class_q_tablero.html#ac54bc08cd92801f8644591b6390e8498">Linea</a>;</div>
+<div class="line"><a name="l00208"></a><span class="lineno"><a class="code" href="class_q_tablero.html#ab53fdbc614a9cdcdb9ff6fc4a8e31e85">  208</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_q_tablero.html#aeaa95dbefa99ec4465c048c397138526">minuto</a>, <a class="code" href="class_q_tablero.html#ab0817931d4eb2c3d8f669a2605bc2abd">min1</a>, <a class="code" href="class_q_tablero.html#ac74db6caa93e0e44dde53d64747e4922">m2</a>, <a class="code" href="class_q_tablero.html#ab53fdbc614a9cdcdb9ff6fc4a8e31e85">segundo</a>, <a class="code" href="class_q_tablero.html#ae171a5f20380711b2ea9b074a6389655">seg1</a>, <a class="code" href="class_q_tablero.html#a31e8bc56409f30c6cc9845f291b8b18e">seg2</a>, <a class="code" href="class_q_tablero.html#a044452259e9e5d718e2ce03452c769b3">mseg</a>, <a class="code" href="class_q_tablero.html#aea4c8307ca39f97f59e6ff3035a67788">n1</a>, <a class="code" href="class_q_tablero.html#abf36f08c51a8906fc84e9311d8bbb54b">n2</a>;</div>
+<div class="line"><a name="l00209"></a><span class="lineno"><a class="code" href="class_q_tablero.html#a5d79d3d78bc2d1c67f15561d875572e3">  209</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_q_tablero.html#a5d79d3d78bc2d1c67f15561d875572e3">seg</a>;</div>
+<div class="line"><a name="l00210"></a><span class="lineno"><a class="code" href="class_q_tablero.html#a94cc1ac5dda07d7d5c4409f2af8f8320">  210</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_q_tablero.html#a94cc1ac5dda07d7d5c4409f2af8f8320">min</a>;</div>
+<div class="line"><a name="l00211"></a><span class="lineno"><a class="code" href="class_q_tablero.html#acb705e309e77abf784b1ff8da5ab4112">  211</a></span>&#160;    QString <a class="code" href="class_q_tablero.html#acb705e309e77abf784b1ff8da5ab4112">contpuntos</a>;</div>
+<div class="line"><a name="l00212"></a><span class="lineno"><a class="code" href="class_q_tablero.html#ab0ea0679042aece391e89722999b1a0c">  212</a></span>&#160;    QLabel *<a class="code" href="class_q_tablero.html#aa406884a5a54a263790a80f58a6de8d6">puntaje</a>,*<a class="code" href="class_q_tablero.html#ab0ea0679042aece391e89722999b1a0c">puntos</a>,*<a class="code" href="class_q_tablero.html#a97dd91406783dd0ff5451cdf0b16af13">jugador</a>;</div>
+<div class="line"><a name="l00213"></a><span class="lineno"><a class="code" href="class_q_tablero.html#a57956f9ed48f669cb3e57659e19bf689">  213</a></span>&#160;    QTimer *<a class="code" href="class_q_tablero.html#a57956f9ed48f669cb3e57659e19bf689">time</a>;</div>
+<div class="line"><a name="l00214"></a><span class="lineno"><a class="code" href="class_q_tablero.html#a0e6c02a11ba69df62f9fc09307c76997">  214</a></span>&#160;    QTime *<a class="code" href="class_q_tablero.html#a0e6c02a11ba69df62f9fc09307c76997">tm</a>;</div>
+<div class="line"><a name="l00215"></a><span class="lineno"><a class="code" href="class_q_tablero.html#a4f5ba1a345cba154c2c71709e7525918">  215</a></span>&#160;    QTime <a class="code" href="class_q_tablero.html#a4f5ba1a345cba154c2c71709e7525918">inicio</a>;</div>
+<div class="line"><a name="l00216"></a><span class="lineno"><a class="code" href="class_q_tablero.html#ae553ee16844f2737e4b826eb554f8494">  216</a></span>&#160;    QPushButton *<a class="code" href="class_q_tablero.html#ae553ee16844f2737e4b826eb554f8494">Verificar</a>;</div>
+<div class="line"><a name="l00217"></a><span class="lineno"><a class="code" href="class_q_tablero.html#aa3b6d4044d80ceaff6c50521068391e5">  217</a></span>&#160;    Ui::QTablero *<a class="code" href="class_q_tablero.html#aa3b6d4044d80ceaff6c50521068391e5">ui</a>;</div>
+<div class="line"><a name="l00218"></a><span class="lineno"><a class="code" href="class_q_tablero.html#ad21fe7299be2fef9387b20eb974fa82e">  218</a></span>&#160;    QLineEdit *<a class="code" href="class_q_tablero.html#ad21fe7299be2fef9387b20eb974fa82e">numbersButton</a>[9][9];</div>
+<div class="line"><a name="l00219"></a><span class="lineno"><a class="code" href="class_q_tablero.html#abf91e0c8b40c31e1317527bfc1b1bedd">  219</a></span>&#160;    QLineEdit  *<a class="code" href="class_q_tablero.html#abf91e0c8b40c31e1317527bfc1b1bedd">numbersButton1</a>[9][9];</div>
+<div class="line"><a name="l00220"></a><span class="lineno"><a class="code" href="class_q_tablero.html#ae0770ae0d761be3036d3bc27bf8b3f70">  220</a></span>&#160;    QLineEdit  *<a class="code" href="class_q_tablero.html#ae0770ae0d761be3036d3bc27bf8b3f70">numbersButton2</a>[9][9];</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;};</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="preprocessor">#endif // QTABLERO_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Miércoles, 10 de Julio de 2013 11:01:32 para Sudoku por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.4
+</small></address>
+</body>
+</html>

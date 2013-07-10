@@ -1,0 +1,402 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>Sudoku: Campos de datos</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="sudoku4kix_logo_460x124.gif"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Sudoku
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Estructuras&#160;de&#160;Datos</span></a></li>
+      <li><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Estructura&#160;de&#160;datos</span></a></li>
+      <li><a href="classes.html"><span>Índice&#160;de&#160;estructura&#160;de&#160;datos</span></a></li>
+      <li><a href="hierarchy.html"><span>Jerarquía&#160;de&#160;la&#160;clase</span></a></li>
+      <li class="current"><a href="functions.html"><span>Campos&#160;de&#160;datos</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow3" class="tabs2">
+    <ul class="tablist">
+      <li class="current"><a href="functions.html"><span>Todo</span></a></li>
+      <li><a href="functions_func.html"><span>Funciones</span></a></li>
+      <li><a href="functions_vars.html"><span>Variables</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow4" class="tabs3">
+    <ul class="tablist">
+      <li><a href="#index_a"><span>a</span></a></li>
+      <li><a href="#index_b"><span>b</span></a></li>
+      <li><a href="#index_c"><span>c</span></a></li>
+      <li><a href="#index_d"><span>d</span></a></li>
+      <li><a href="#index_e"><span>e</span></a></li>
+      <li><a href="#index_h"><span>h</span></a></li>
+      <li><a href="#index_i"><span>i</span></a></li>
+      <li><a href="#index_j"><span>j</span></a></li>
+      <li><a href="#index_l"><span>l</span></a></li>
+      <li><a href="#index_m"><span>m</span></a></li>
+      <li><a href="#index_n"><span>n</span></a></li>
+      <li><a href="#index_o"><span>o</span></a></li>
+      <li><a href="#index_p"><span>p</span></a></li>
+      <li><a href="#index_q"><span>q</span></a></li>
+      <li><a href="#index_s"><span>s</span></a></li>
+      <li><a href="#index_t"><span>t</span></a></li>
+      <li><a href="#index_u"><span>u</span></a></li>
+      <li><a href="#index_v"><span>v</span></a></li>
+      <li><a href="#index_w"><span>w</span></a></li>
+      <li><a href="#index_0x7e"><span>~</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Estructuras de Datos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="contents">
+<div class="textblock">Lista de todos los campos de estructuras y uniones con enlaces a las estructuras/uniones a que pertenecen:</div>
+
+<h3><a class="anchor" id="index_a"></a>- a -</h3><ul>
+<li>Aux
+: <a class="el" href="class_q_tablero.html#a7f0335cb524444bd5806cd8336174f32">QTablero</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_b"></a>- b -</h3><ul>
+<li>BinarytoInt()
+: <a class="el" href="class_q_tablero.html#aa6e7521b1e7509840fa98419773481fa">QTablero</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
+<li>cargar_partidas()
+: <a class="el" href="class_q_tablero.html#a9891521d5dd42f5eae15097f1721ad9b">QTablero</a>
+</li>
+<li>cargarTableroLleno()
+: <a class="el" href="class_q_tablero.html#a0167695adc4107349fb18b83c3527bf1">QTablero</a>
+</li>
+<li>contpuntos
+: <a class="el" href="class_q_tablero.html#acb705e309e77abf784b1ff8da5ab4112">QTablero</a>
+</li>
+<li>control_ingreso_ficha()
+: <a class="el" href="class_q_tablero.html#af1ac2ed8ab65c030ab62094c6de502b2">QTablero</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_d"></a>- d -</h3><ul>
+<li>dificultad
+: <a class="el" href="class_q_tablero.html#a0bd584d1e208a5212d402b30740d4cea">QTablero</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_e"></a>- e -</h3><ul>
+<li>error
+: <a class="el" href="class_q_tablero.html#ab35059622369531cd12113ed81d56296">QTablero</a>
+</li>
+<li>escribirTablero()
+: <a class="el" href="class_q_tablero.html#a5ae27bad7cfa5dd3909eecba9a94a5d1">QTablero</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_h"></a>- h -</h3><ul>
+<li>habilitados
+: <a class="el" href="class_q_tablero.html#aa2b427975a16d773ac3624c3f09f1dbb">QTablero</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
+<li>inicio
+: <a class="el" href="class_q_tablero.html#a4f5ba1a345cba154c2c71709e7525918">QTablero</a>
+</li>
+<li>initTablero()
+: <a class="el" href="class_q_tablero.html#a86e46664e9ca736c4c42e43215f0286e">QTablero</a>
+</li>
+<li>inttoBinary()
+: <a class="el" href="class_q_tablero.html#a4022f47a00ec1d559546502f1d94bdcd">QTablero</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_j"></a>- j -</h3><ul>
+<li>jugador
+: <a class="el" href="class_q_tablero.html#a97dd91406783dd0ff5451cdf0b16af13">QTablero</a>
+</li>
+<li>jugadores_archivo()
+: <a class="el" href="class_q_tablero.html#a50dafe8b469a6952a1c990ab6048922d">QTablero</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_l"></a>- l -</h3><ul>
+<li>Linea
+: <a class="el" href="class_q_tablero.html#ac54bc08cd92801f8644591b6390e8498">QTablero</a>
+</li>
+<li>lineaCompleta
+: <a class="el" href="class_q_tablero.html#ad0a9c1c4982e0cb5e07a07f3d6209097">QTablero</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_m"></a>- m -</h3><ul>
+<li>m2
+: <a class="el" href="class_q_tablero.html#ac74db6caa93e0e44dde53d64747e4922">QTablero</a>
+</li>
+<li>min
+: <a class="el" href="class_q_tablero.html#a94cc1ac5dda07d7d5c4409f2af8f8320">QTablero</a>
+</li>
+<li>min1
+: <a class="el" href="class_q_tablero.html#ab0817931d4eb2c3d8f669a2605bc2abd">QTablero</a>
+</li>
+<li>minuto
+: <a class="el" href="class_q_tablero.html#aeaa95dbefa99ec4465c048c397138526">QTablero</a>
+</li>
+<li>mseg
+: <a class="el" href="class_q_tablero.html#a044452259e9e5d718e2ce03452c769b3">QTablero</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_n"></a>- n -</h3><ul>
+<li>n1
+: <a class="el" href="class_q_tablero.html#aea4c8307ca39f97f59e6ff3035a67788">QTablero</a>
+</li>
+<li>n2
+: <a class="el" href="class_q_tablero.html#abf36f08c51a8906fc84e9311d8bbb54b">QTablero</a>
+</li>
+<li>nivel()
+: <a class="el" href="classnivel.html#add84530f153521109b3c306edf61db1d">nivel</a>
+</li>
+<li>nom
+: <a class="el" href="classnivel.html#aa075fa6ce0af7308326d8debfbbe4217">nivel</a>
+</li>
+<li>nombrejugador
+: <a class="el" href="class_q_tablero.html#ab6988e6aa07336dc639688ef420f0b10">QTablero</a>
+</li>
+<li>nombresjugadores
+: <a class="el" href="class_q_tablero.html#ae2bf33108036c5f76f04480aabda39cb">QTablero</a>
+</li>
+<li>numbersButton
+: <a class="el" href="class_q_tablero.html#ad21fe7299be2fef9387b20eb974fa82e">QTablero</a>
+</li>
+<li>numbersButton1
+: <a class="el" href="class_q_tablero.html#abf91e0c8b40c31e1317527bfc1b1bedd">QTablero</a>
+</li>
+<li>numbersButton2
+: <a class="el" href="class_q_tablero.html#ae0770ae0d761be3036d3bc27bf8b3f70">QTablero</a>
+</li>
+<li>numeros
+: <a class="el" href="class_q_tablero.html#a9d54891391a61aec77953166fb87f733">QTablero</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_o"></a>- o -</h3><ul>
+<li>on_actionExit_triggered()
+: <a class="el" href="class_q_tablero.html#aa65d125749974078cd15d9230da6de67">QTablero</a>
+</li>
+<li>on_pushButton_2_clicked()
+: <a class="el" href="classnivel.html#ad30405282b56bfeb04d9074ed5481201">nivel</a>
+, <a class="el" href="class_q_tablero.html#a5cbf48c62d4df491f709a8bb2c0a5666">QTablero</a>
+</li>
+<li>on_pushButton_4_clicked()
+: <a class="el" href="class_q_tablero.html#aef7c0e48ab66ebeb4480afdf7a827b96">QTablero</a>
+</li>
+<li>on_pushButton_6_clicked()
+: <a class="el" href="class_q_tablero.html#a8da62446f7cb74d02ed730a82748a0b5">QTablero</a>
+</li>
+<li>on_pushButton_clicked()
+: <a class="el" href="classprincipal.html#ae2ab94239eb46d69f8eb7160f2489435">principal</a>
+, <a class="el" href="class_q_tablero.html#a09230d58bfba3328b56e0179620a9b60">QTablero</a>
+, <a class="el" href="classnivel.html#aa6bc1e0eeb2d648eb7d0f160ab25460e">nivel</a>
+</li>
+<li>on_verificar_clicked()
+: <a class="el" href="class_q_tablero.html#affe5425e0c485fcb06eb87bc7a668ea1">QTablero</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_p"></a>- p -</h3><ul>
+<li>partida
+: <a class="el" href="classnivel.html#a63120c4c53d24284ac7fffd1d6382c7b">nivel</a>
+</li>
+<li>partida_nueva()
+: <a class="el" href="class_q_tablero.html#ab33477f6bb356b0413f4b62b36afb4b9">QTablero</a>
+</li>
+<li>principal()
+: <a class="el" href="classprincipal.html#ab8fd3ebc6c6e93eae9d1ae4ae013cbef">principal</a>
+</li>
+<li>puntaje
+: <a class="el" href="class_q_tablero.html#aa406884a5a54a263790a80f58a6de8d6">QTablero</a>
+</li>
+<li>puntos
+: <a class="el" href="class_q_tablero.html#ab0ea0679042aece391e89722999b1a0c">QTablero</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_q"></a>- q -</h3><ul>
+<li>QTablero()
+: <a class="el" href="class_q_tablero.html#ad874f712d2619e753ec1d2e454545d6b">QTablero</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
+<li>seg
+: <a class="el" href="class_q_tablero.html#a5d79d3d78bc2d1c67f15561d875572e3">QTablero</a>
+</li>
+<li>seg1
+: <a class="el" href="class_q_tablero.html#ae171a5f20380711b2ea9b074a6389655">QTablero</a>
+</li>
+<li>seg2
+: <a class="el" href="class_q_tablero.html#a31e8bc56409f30c6cc9845f291b8b18e">QTablero</a>
+</li>
+<li>segundo
+: <a class="el" href="class_q_tablero.html#ab53fdbc614a9cdcdb9ff6fc4a8e31e85">QTablero</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_t"></a>- t -</h3><ul>
+<li>temporal
+: <a class="el" href="class_q_tablero.html#a1cb60f657c8150765ba905e3200a7f81">QTablero</a>
+</li>
+<li>tiempo()
+: <a class="el" href="class_q_tablero.html#ad6ca26b9d399ee6a0673f0dc7adc4eeb">QTablero</a>
+</li>
+<li>tiempo1()
+: <a class="el" href="class_q_tablero.html#a805f2e9983473e8268af4002a14058aa">QTablero</a>
+</li>
+<li>time
+: <a class="el" href="class_q_tablero.html#a57956f9ed48f669cb3e57659e19bf689">QTablero</a>
+</li>
+<li>tm
+: <a class="el" href="class_q_tablero.html#a0e6c02a11ba69df62f9fc09307c76997">QTablero</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_u"></a>- u -</h3><ul>
+<li>ui
+: <a class="el" href="classnivel.html#af0b0c158a4fedb084c85456c4d4d2a50">nivel</a>
+, <a class="el" href="class_q_tablero.html#aa3b6d4044d80ceaff6c50521068391e5">QTablero</a>
+, <a class="el" href="classprincipal.html#a0efbf4a21744f6212bf890a95751f743">principal</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_v"></a>- v -</h3><ul>
+<li>Verificar
+: <a class="el" href="class_q_tablero.html#ae553ee16844f2737e4b826eb554f8494">QTablero</a>
+</li>
+<li>verificarcolumna()
+: <a class="el" href="class_q_tablero.html#aee182443d767ad28bb8a42e21ca405f9">QTablero</a>
+</li>
+<li>verificarficha()
+: <a class="el" href="class_q_tablero.html#a70a9babfd41d7d45a2e774ff9decc786">QTablero</a>
+</li>
+<li>verificarfila()
+: <a class="el" href="class_q_tablero.html#ace2238d3b165668157640da3ecd2a4b7">QTablero</a>
+</li>
+<li>verificarsubcuadricula()
+: <a class="el" href="class_q_tablero.html#a5a48d3437538521913d71994f01972e7">QTablero</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_w"></a>- w -</h3><ul>
+<li>w
+: <a class="el" href="classprincipal.html#a23d9843a5cd1fdd39bfa2aed8f2823ab">principal</a>
+</li>
+<li>w1
+: <a class="el" href="classnivel.html#a98ab69240e6d5010ee344530c385753f">nivel</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_0x7e"></a>- ~ -</h3><ul>
+<li>~nivel()
+: <a class="el" href="classnivel.html#ac63f1ccafcaeb80b0bfdf1bfeedd3c17">nivel</a>
+</li>
+<li>~principal()
+: <a class="el" href="classprincipal.html#a86183d194e744bfa2e206c2b67421a92">principal</a>
+</li>
+<li>~QTablero()
+: <a class="el" href="class_q_tablero.html#aa989d612221c57f3608da05965557bde">QTablero</a>
+</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Miércoles, 10 de Julio de 2013 11:01:32 para Sudoku por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.4
+</small></address>
+</body>
+</html>

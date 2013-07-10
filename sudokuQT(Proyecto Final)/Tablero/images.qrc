@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Sudoku1.txt</file>
+        <file>images/visto.png</file>
+        <file>images/x.png</file>
+        <file>images/ayuda.jpg</file>
+        <file>images/exit.jpg</file>
+        <file>images/guardar.jpg</file>
+        <file>images/visto1.png</file>
+        <file>images/ini.jpg</file>
+        <file>images/ININ.png</file>
+    </qresource>
+</RCC>

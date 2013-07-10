@@ -1,0 +1,4 @@
+sobre funcionalidad nos falto de implementar lo de cargar partida, el tablero lo cargo desde un .txt
+ asi que no tenemos un codigo generador de sudokus
+también nos falto de implmentar los mejores puntajes
+esas tres cosas nos faltaron de ahi lo demas del proyecto si esta implementado
